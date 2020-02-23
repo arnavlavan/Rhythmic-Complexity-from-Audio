@@ -20,4 +20,5 @@ get_onsets.py is currently the main code file. Place the audio files (mp3 format
 
 ## Authors
 Adam Yodfat, PhD candidate, Musicology dept., Hebrew University of Jerusalem (This project is part of a larger academic research about Israeli Popular Music)
+
 Amir Avni
