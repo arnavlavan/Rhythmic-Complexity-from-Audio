@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import os
 
 # np.seterr(all='raise')
-filepath = './data/mp3/'
-filepath_img = 'data/img/'
+filepath = '../../data/mp3/'
+filepath_img = '../../data/img/'
 # SUMMERY_N = np.array([1,2,4,8,16,32])
 PLOT = True
 

@@ -6,9 +6,9 @@ import os
 import gc
 
 
-filepath = 'data/mp3/'
-filepath_pkl = 'data/pkl/'
-filepath_img = 'data/png/'
+filepath = '../../data/mp3/'
+filepath_pkl = '../../data/pkl/'
+filepath_img = '../../data/png/'
 
 
 def save2data(_str, data2save):

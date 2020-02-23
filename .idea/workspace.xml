@@ -1,7 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e660469-b20a-4267-bbd7-845abc95d9d4" name="Default Changelist" comment="" />
+    <list default="true" id="0e660469-b20a-4267-bbd7-845abc95d9d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/code/plotting/beat_plot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/plotting/beats_onsets_bar_half.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/plotting/compare_onsets_agg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/plotting/get_onsets_better_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/librosa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/librosa.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beat_plot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beat_times.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/backbeat.120bpm.-12dB.png" beforeDir="false" afterPath="$PROJECT_DIR$/beats/img/backbeat.120bpm.-12dB.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/backbeat.120bpm.aggressive.compression.png" beforeDir="false" afterPath="$PROJECT_DIR$/beats/img/backbeat.120bpm.aggressive.compression.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/backbeat.120bpm.png" beforeDir="false" afterPath="$PROJECT_DIR$/beats/img/backbeat.120bpm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/backbeat.120bpm.vintage.sound.png" beforeDir="false" afterPath="$PROJECT_DIR$/beats/img/backbeat.120bpm.vintage.sound.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/backbeat.malfouf.masmoudi.fast.120bpm.png" beforeDir="false" afterPath="$PROJECT_DIR$/beats/img/backbeat.malfouf.masmoudi.fast.120bpm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/backbeat.malfouf.masmoudi.slow.120bpm.png" beforeDir="false" afterPath="$PROJECT_DIR$/beats/img/backbeat.malfouf.masmoudi.slow.120bpm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/eps/backbeat.120bpm.-12dB.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/eps/backbeat.120bpm.aggressive.compression.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/eps/backbeat.120bpm.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/eps/backbeat.120bpm.vintage.sound.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/eps/backbeat.malfouf.masmoudi.fast.120bpm.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/eps/backbeat.malfouf.masmoudi.slow.120bpm.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/eps/malfouf.120bpm.slow.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/eps/malfouf.fast.120bpm.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/eps/masmoudi.120bpm.slow.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/eps/masmoudi.fast.120bpm.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/malfouf.120bpm.slow.png" beforeDir="false" afterPath="$PROJECT_DIR$/beats/img/malfouf.120bpm.slow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/malfouf.fast.120bpm.png" beforeDir="false" afterPath="$PROJECT_DIR$/beats/img/malfouf.fast.120bpm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/masmoudi.120bpm.slow.png" beforeDir="false" afterPath="$PROJECT_DIR$/beats/img/masmoudi.120bpm.slow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats/img/masmoudi.fast.120bpm.png" beforeDir="false" afterPath="$PROJECT_DIR$/beats/img/masmoudi.fast.120bpm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beats_onsets_bar_half.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chromagram.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compare_onsets_agg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compare_tempogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/plotting/compare_tempogram.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getOnsetsCC.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_onsets_better_code.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/get_onsets_hbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_onsets_under_spectrogram.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/librosa-feature-tempogram-1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/librosa.tutorial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mergePickles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_onsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/plotting/plot_onsets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_onsets_and_norm_and_cc.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/plotting/plot_onsets_and_norm_and_cc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_onsets_and_onsets_cc.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/plotting/plot_onsets_and_onsets_cc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_onsets_and_onsets_cc_librosa_autocorrelate.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/plotting/plot_onsets_and_onsets_cc_librosa_autocorrelate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_segments.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/plotting/plot_segments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_wav.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/plotting/plot_wav.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tempogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/plotting/tempogram.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trim_compare.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,27 +61,78 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YBEtY6suWNnlQWAad9R9hrRw5W" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\OWNER\Dropbox\1phd\data.analysis\Rhythmic-Complexity-from-Audio\code\plotting" />
+      <recent name="C:\Users\OWNER\Dropbox\1phd\data.analysis\Rhythmic-Complexity-from-Audio\code" />
       <recent name="C:\Users\OWNER\Dropbox\1phd\data.analysis\librosa" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\OWNER\Dropbox\1phd\data.analysis\librosa" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.get_onsets_hbar">
-    <configuration name="get_onsets" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.trim_compare">
+    <configuration name="beat_plot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="librosa" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/beat_plot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="compare_tempogram" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="librosa" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\OWNER\Dropbox\1phd\data.analysis\Rhythmic-Complexity-from-Audio\code\plotting\compare_tempogram.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="plot_onsets_under_spectrogram (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="librosa" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -46,7 +144,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_onsets.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot_onsets_under_spectrogram.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -55,7 +153,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_onsets_better_code" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="tempogram" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="librosa" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -63,11 +161,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_onsets_better_code.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/plotting/tempogram.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -76,7 +174,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_onsets_hbar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="trim_compare" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="librosa" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -84,11 +182,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/get_onsets_hbar.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/trim_compare.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -97,55 +195,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="merge_pickles" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="librosa" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/merge_pickles.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="trim_compare" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="librosa" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trim_compare.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="Python.beat_plot" />
+      <item itemvalue="Python.compare_tempogram" />
+      <item itemvalue="Python.plot_onsets_under_spectrogram (1)" />
+      <item itemvalue="Python.tempogram" />
+      <item itemvalue="Python.trim_compare" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.get_onsets_hbar" />
-        <item itemvalue="Python.merge_pickles" />
-        <item itemvalue="Python.get_onsets_better_code" />
-        <item itemvalue="Python.get_onsets" />
         <item itemvalue="Python.trim_compare" />
+        <item itemvalue="Python.tempogram" />
+        <item itemvalue="Python.compare_tempogram" />
+        <item itemvalue="Python.beat_plot" />
+        <item itemvalue="Python.plot_onsets_under_spectrogram (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -171,23 +234,34 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="222" key="GridCell.Tab.0.bottom" timestamp="1582408808753">
+    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582472745232">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582472745232" />
+    <state width="1899" height="222" key="GridCell.Tab.0.bottom" timestamp="1582472815761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="222" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.176.1440.860@0.0.1920.1040" timestamp="1582408808753" />
-    <state width="1899" height="222" key="GridCell.Tab.0.center" timestamp="1582408808753">
+    <state width="1899" height="222" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582472815761" />
+    <state width="1899" height="222" key="GridCell.Tab.0.center" timestamp="1582472815761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="222" key="GridCell.Tab.0.center/0.0.1920.1040/1920.176.1440.860@0.0.1920.1040" timestamp="1582408808753" />
-    <state width="1899" height="222" key="GridCell.Tab.0.left" timestamp="1582408808752">
+    <state width="1899" height="222" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582472815761" />
+    <state width="1899" height="222" key="GridCell.Tab.0.left" timestamp="1582472815761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="222" key="GridCell.Tab.0.left/0.0.1920.1040/1920.176.1440.860@0.0.1920.1040" timestamp="1582408808752" />
-    <state width="1899" height="222" key="GridCell.Tab.0.right" timestamp="1582408808753">
+    <state width="1899" height="222" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582472815761" />
+    <state width="1899" height="222" key="GridCell.Tab.0.right" timestamp="1582472815761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="222" key="GridCell.Tab.0.right/0.0.1920.1040/1920.176.1440.860@0.0.1920.1040" timestamp="1582408808753" />
+    <state width="1899" height="222" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582472815761" />
     <state width="1899" height="347" key="GridCell.Tab.1.bottom" timestamp="1582408548355">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -204,10 +278,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="347" key="GridCell.Tab.1.right/0.0.1920.1040/1920.176.1440.860@0.0.1920.1040" timestamp="1582408548355" />
-    <state x="463" y="165" key="SettingsEditor" timestamp="1582407901765">
+    <state x="463" y="165" key="SettingsEditor" timestamp="1582463201378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="165" key="SettingsEditor/0.0.1920.1040/1920.176.1440.860@0.0.1920.1040" timestamp="1582407901765" />
+    <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582463201378" />
     <state x="667" y="276" width="586" height="488" key="find.popup" timestamp="1582408160929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -220,11 +295,6 @@
           <url>file://$PROJECT_DIR$/../structural_change/Rhythmic_Structural_Change/getChromaStructChange.py</url>
           <line>49</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/compare_tempogram.py</url>
-          <line>69</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 music_file = '0044 zohar argov - nachon lehayom.mp3'
-music_dir = 'data/mp3/'
+music_dir = '../data/mp3/'
 img_dir = 'data/img/'
 
 print('Loading ' + music_file + '...')

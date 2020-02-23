@@ -9,7 +9,7 @@ def norm_vec(vec):
 
 
 music_file = '0433 ultras & itay levi - messiba behaifa.mp3'
-music_dir = 'data/mp3/'
+music_dir = '../../data/mp3/'
 img_dir = 'data/img/'
 
 print('Loading ' + music_file + '...')

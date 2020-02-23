@@ -36,7 +36,7 @@ def norm_cc(a, b, start_idx, end_idx):
 # MAIN
 
 for filename in os.listdir(filepath):
-    if filename.split('.mp3')[0]+'.pkl' in os.listdir(filepath_pkl) or not filename.endswith(".mp3"):
+    if not filename.endswith(".mp3"): # filename.split('.mp3')[0]+'.pkl' in os.listdir(filepath_pkl) or
         continue
     else:
         # try:
@@ -200,16 +200,12 @@ for filename in os.listdir(filepath):
             bottom, top = plt.ylim()
             plt.vlines(beat_times[0::4], bottom, 1, linestyle='dotted', label='bars', zorder=0, alpha=0.4)
             plt.title('Onsets cross-correlation')
-            plt.xlabel('time (s)')
             plt.ylabel('normalized onsets CC')
-            plt.legend(loc='best', fancybox=True)
+            plt.legend(loc='center', fancybox=True, ncol=4, bbox_to_anchor=(0.5, -0.5))
             plt.tight_layout()
             # plt.show()
             filename_img = filename.split('.mp3')[0]+'.png'
             plt.savefig(filepath_img + filename_img)
-            filename_img = filename.split('.mp3')[0]+'.eps'
-            plt.savefig(filepath_img + filename_img)
-
             plt.close()
             #plt.show()
         #except:

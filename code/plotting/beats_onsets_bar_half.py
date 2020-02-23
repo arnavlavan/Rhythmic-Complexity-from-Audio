@@ -1,6 +1,7 @@
 import librosa.display
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 
 
 def norm_cc(a, b, start_idx, end_idx):
@@ -18,9 +19,10 @@ def norm_cc(a, b, start_idx, end_idx):
 
 
 # main
-music_file = '0433 ultras & itay levi - messiba behaifa.mp3'
-music_dir = 'data/mp3/'
-img_dir = 'data/img/'
+music_file = '3min.masmoudi.120bpm.mp3'
+music_dir = '../beats/mp3/'
+img_dir = '../beats/img/'
+df = pd.DataFrame(index=[music_file])
 
 print('Loading ' + music_file + '...')
 y, sr = librosa.load(music_dir + music_file, duration=60.0)
@@ -49,8 +51,9 @@ onset_times = librosa.frames_to_time(onset_raw, sr=sr)
 beat_times = librosa.frames_to_time(beat_frames, sr=sr)
 
 print("norm_cc...")
-onset_cc_1 = np.zeros(int(np.ceil(len(beat_frames)/4)))
-onset_cc_t = np.zeros(int(np.ceil(len(beat_frames)/4)))
+max_ons_bar = np.zeros(int(np.ceil(len(beat_frames)/4)))
+min_ons_bar = max_ons_bar
+ons_bar_t = np.zeros(int(np.ceil(len(beat_frames)/4)))
 cnt = 0
 
 for beatIdx in range(0, len(beat_frames)-8, 4):
@@ -59,13 +62,20 @@ for beatIdx in range(0, len(beat_frames)-8, 4):
     frameStart = beat_frames[beatIdx]
     frameEnd = beat_frames[beatIdx + 4]
     onSet_subVec = oenv[frameStart:frameEnd]
-    ons1 = norm_cc(oenv, onSet_subVec, frameStart, beat_frames[beatIdx + 8])
-    onset_cc_1[cnt] = np.max(ons1[1:])
-    onset_cc_t[cnt] = frameStart*(hop_length/sr)
+    ons_bar = norm_cc(oenv, onSet_subVec, frameStart, beat_frames[beatIdx + 8])
+    max_ons_bar[cnt] = np.max(ons_bar[1:])
+    min_ons_bar[cnt] = np.min(ons_bar[1:])
+    ons_bar_t[cnt] = frameStart*(hop_length/sr)
     cnt += 1
 
-onset_cc_2 = np.zeros(int(np.ceil(len(beat_frames)/2)))
-onset_cc_t2 = np.zeros(int(np.ceil(len(beat_frames)/2)))
+df['max_ons_bar_avg'] = np.mean(max_ons_bar[np.where(ons_bar_t > 0)])
+max_ons_bar_std = np.std(max_ons_bar[np.where(ons_bar_t > 0)])
+min_ons_bar_avg = np.mean(min_ons_bar[np.where(ons_bar_t > 0)])
+min_ons_bar_std = np.std(min_ons_bar[np.where(ons_bar_t > 0)])
+
+max_ons_hbar = np.zeros(int(np.ceil(len(beat_frames)/2)))
+min_ons_hbar = max_ons_hbar
+ons_hbar_t = np.zeros(int(np.ceil(len(beat_frames)/2)))
 cnt = 0
 
 for beatIdx in range(0, len(beat_frames)-4, 2):
@@ -74,11 +84,18 @@ for beatIdx in range(0, len(beat_frames)-4, 2):
     frameStart = beat_frames[beatIdx]
     frameEnd = beat_frames[beatIdx + 2]
     onSet_subVec = oenv[frameStart:frameEnd]
-    ons2 = norm_cc(oenv, onSet_subVec, frameStart, beat_frames[beatIdx + 4])
-    onset_cc_2[cnt] = np.max(ons2[1:])
-    onset_cc_t2[cnt] = frameStart*(hop_length/sr)
+    ons_hbar = norm_cc(oenv, onSet_subVec, frameStart, beat_frames[beatIdx + 4])
+    max_ons_hbar[cnt] = np.max(ons_hbar[1:])
+    min_ons_hbar[cnt] = np.min(ons_hbar[1:])
+    ons_hbar_t[cnt] = frameStart*(hop_length/sr)
     cnt += 1
 
+max_ons_hbar_avg = np.mean(max_ons_hbar[np.where(ons_hbar_t > 0)])
+max_ons_hbar_std = np.std(max_ons_hbar[np.where(ons_hbar_t > 0)])
+min_ons_hbar_avg = np.mean(min_ons_hbar[np.where(ons_hbar_t > 0)])
+min_ons_hbar_std = np.std(min_ons_hbar[np.where(ons_hbar_t > 0)])
+
+print(df)
 
 print('plotting...')
 plt.figure(music_file.split('.mp3')[0], figsize=(10, 8))
@@ -95,10 +112,10 @@ ax2 = plt.subplot(212)
 ax2 = plt.gca()
 plt.margins(x=0.001, y=0.005)
 ax2.plot(times, oenv, label='Onset strength', zorder=1, alpha=0.5)
-plt.plot(onset_cc_t[np.where(onset_cc_t > 0)], onset_cc_1[np.where(onset_cc_t > 0)],
-         label='onset cross-correlation (bar segment)', zorder=2, alpha=0.75)
-plt.plot(onset_cc_t2[np.where(onset_cc_t2 > 0)], onset_cc_2[np.where(onset_cc_t2 > 0)],
-         label='onset cross-correlation (half bar segment)', zorder=4)
+plt.plot(ons_bar_t[np.where(ons_bar_t > 0)], max_ons_bar[np.where(ons_bar_t > 0)],
+         label='max.onset CC (bar)', zorder=2, alpha=0.75)
+plt.plot(ons_hbar_t[np.where(ons_hbar_t > 0)], max_ons_hbar[np.where(ons_hbar_t > 0)],
+         label='max.onset CC (half bar)', zorder=4)
 plt.vlines(beat_times[0::4], 0, 1, linestyle='--', label='bars', zorder=3, alpha=0.6)
 plt.title(music_file.split('.mp3')[0] + ' excerpt')
 plt.legend(loc='lower center', ncol=2, frameon=True, framealpha=0.75, fancybox=True)
@@ -113,7 +130,7 @@ ax3 = plt.subplot(313)
 ax3 = plt.gca()
 plt.margins(x=0.001, y=0.005)
 ax3.plot(times, oenv, label='Onset strength')
-plt.plot(onset_cc_t[np.where(onset_cc_t > 0)], onset_cc_2[np.where(onset_cc_t > 0)],
+plt.plot(onset_cc_t[np.where(onset_cc_t > 0)], ons_hbar[np.where(onset_cc_t > 0)],
          label='Onset cross-correlation')
 plt.legend(loc='lower center', ncol=2, frameon=True, framealpha=0.75, fancybox=True)
 plt.xlabel('time (s)')

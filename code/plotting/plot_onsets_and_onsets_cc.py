@@ -21,8 +21,8 @@ def norm_cc(a,b,startIdx,endIdx):
 
 ### main
 #music_file = '0433 ultras & itay levi - messiba behaifa.mp3'
-music_dir = 'beats/mp3/'
-data_dir = 'beats/pkl/'
+music_dir = '../../beats/mp3/'
+data_dir = '../../beats/pkl/'
 img_dir = 'beats/img2/'
 
 for music_file in os.listdir(music_dir):

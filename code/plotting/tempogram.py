@@ -2,7 +2,7 @@ import librosa
 import numpy as np, scipy, matplotlib.pyplot as plt
 
 # Load audio
-filename = "data/mp3/0377 sarit hadad - tishtok tishtok.mp3"
+filename = "mp3/0377 sarit hadad - tishtok tishtok.mp3"
 x, sr = librosa.load(filename, duration=15.0)
 print("decoded " + filename)
 

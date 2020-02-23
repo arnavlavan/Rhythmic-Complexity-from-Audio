@@ -21,8 +21,8 @@ def norm_cc(a,b,startIdx,endIdx):
 
 ### main
 filename = "0075 pe'er tassi - derech hashalom.mp3"
-filepath = 'data/mp3/'
-data_dir = 'data/pkl/'
+filepath = '../../data/mp3/'
+data_dir = '../../data/pkl/'
 data_file = filename.split('.mp3')[0] + '.dill'
 '''
 print('Loading ...')

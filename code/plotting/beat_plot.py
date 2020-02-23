@@ -2,7 +2,7 @@ import librosa, librosa.display
 import matplotlib.pyplot as plt
 import numpy as np
 
-y, sr = librosa.load('data/mp3/0014 moshe peretz - kol hamilim hasmechot 01.19-01.27.mp3')
+y, sr = librosa.load('../mp3/0014 moshe peretz - kol hamilim hasmechot.mp3')
 hop_length = 512
 y_harmonic, y_percussive = librosa.effects.hpss(y)
 tempo, beat_frames = librosa.beat.beat_track(y=y_percussive,sr=sr)
