@@ -12,8 +12,8 @@ The method is based on audio feature analysis using the librosa package for Pyth
 7. High cross-correlation values are suggested to represent a low level of rhythmic complexity, and vice versa - low cross-correlation values are suggested to represent a high level of rhythmic complexity.
 
 ## Prerequisites
-Python (version 3.6+)
-Ptyhon packages: librosa, numpy, matplotlib
+Python (version 3.6+),
+Python packages: librosa, numpy, matplotlib
 
 ## Getting Started
 get_onsets.py is currently the main code file. Place the audio files (mp3 format) you wish to examine in the 'data/mp3/' folder, and run the code. For each audio file, a data output pickle files is created in the 'data/pkl/' folder, and the onsets-CC graphs are created in the 'data/img/' folder.
