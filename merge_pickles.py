@@ -3,7 +3,8 @@ import os
 import pandas as pd
 import numpy as np
 
-file_path_pkl = 'data/pkl/'
+# file_path_pkl = 'data/pkl/'
+file_path_pkl = 'beats/pkl/'
 file_list = os.listdir(file_path_pkl)
 data_list = []
 

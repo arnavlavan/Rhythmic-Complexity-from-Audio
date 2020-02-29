@@ -16,7 +16,12 @@ Python (version 3.6+),
 Python packages: librosa, numpy, matplotlib
 
 ## Getting Started
-get_onsets.py is currently the main code file. Place the audio files (mp3 format) you wish to examine in the 'data/mp3/' folder, and run the code. For each audio file, a data output pickle files is created in the 'data/pkl/' folder, and the onsets-CC graphs are created in the 'data/img/' folder.
+get_onsets.py is currently the main code file. Place the audio files (mp3 format) you 
+wish to examine in the 'data/mp3/' folder, and run the code. For each audio file, a 
+data output pickle files is created in the 'data/pkl/' folder, and the onsets-CC graphs 
+are created in the 'data/img/' folder. To get all of the pickled data from multiple
+files into one csv file, use merge_pickles.py. If you wish to get a graph that 
+includes the audio power spectrogram, you can use plot_onsets_under_spectrogram.py.
 
 ## Authors
 Adam Yodfat, PhD candidate, Musicology dept., Hebrew University of Jerusalem (This project is part of a larger academic research about Israeli Popular Music)

@@ -36,7 +36,7 @@ def norm_cc(a, b, start_idx, end_idx):
 # MAIN
 
 for filename in os.listdir(filepath):
-    if not filename.endswith(".mp3"): # filename.split('.mp3')[0]+'.pkl' in os.listdir(filepath_pkl) or
+    if filename.split('.mp3')[0]+'.pkl' in os.listdir(filepath_pkl) or not filename.endswith(".mp3"):
         continue
     else:
         # try:
@@ -44,11 +44,11 @@ for filename in os.listdir(filepath):
             allData = {}
             print(filename)
             print("loading...")
-            y, sr = librosa.load(filepath + filename, duration=60.0)
-            yMax = np.max(y)
-            idxStart = (np.where(y[1:sr * 40] > (yMax / 100)))[0][0]
-            idxEnd = len(y) - sr*40 + (np.where(y[-sr*40:] > (yMax / 100) ))[0][-1]
-            y = y[idxStart:idxEnd]
+            y, sr = librosa.load(filepath + filename, duration=70.0)
+            # yMax = np.max(y)                                         ### this code trims leading and trailing silence
+            # idxStart = (np.where(y[1:sr * 40] > (yMax / 100)))[0][0]
+            # idxEnd = len(y) - sr*40 + (np.where(y[-sr*40:] > (yMax / 100) ))[0][-1]
+            # y = y[idxStart:idxEnd]                                   ### this code trims leading and trailing silence
             # Set the hop length; at 22050 Hz, 512 samples ~= 23ms
             hop_length = 512
 
@@ -57,7 +57,7 @@ for filename in os.listdir(filepath):
             y_harmonic, y_percussive = librosa.effects.hpss(y)
             # Beat track on the percussive signal
             print("beat_frames...")
-            tempo, beat_frames = librosa.beat.beat_track(y=y_percussive,sr=sr)
+            tempo, beat_frames = librosa.beat.beat_track(y=y_percussive,sr=sr, bpm=120)
             beat_times = librosa.frames_to_time(beat_frames, sr=sr)
             print("onset...")  # onset can also be aggregated over median, default is mean
             oenv = librosa.onset.onset_strength(y=y_percussive, sr=sr, hop_length=hop_length)
@@ -187,10 +187,12 @@ for filename in os.listdir(filepath):
             librosa.display.specshow(librosa.amplitude_to_db(D, ref=np.max), y_axis='log', x_axis='time')
             # ax1.set_xlim(left=70, right=90)
             plt.xlabel('time (s)')
-            plt.title(filename + ' --- Power Spectrogram')
+            plt.title(filename + ' --- Power Spectrogram, ' + str(int(tempo)) + ' bpm')
+            bounds = plt.xlim()
 
             ax2 = plt.subplot(212)
             plt.margins(x=0.001, y=0.005)
+            plt.xlim(bounds)
             plt.plot(onscc_half_t[np.where(onscc_half_t > 0)], onscc_half[np.where(onscc_half_t > 0)],
                      label='onsets CC, half bar segment', zorder=2)
             plt.plot(onscc_bar_t[np.where(onscc_bar_t > 0)], onscc_bar[np.where(onscc_bar_t > 0)],
