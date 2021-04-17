@@ -28,10 +28,11 @@ Adam Yodfat, PhD candidate, Musicology dept., Hebrew University of Jerusalem (Th
 
 Amir Avni
 
-## Citiation
+## Citation
 
 For the full dissertation (in Hebrew): https://www.academia.edu/45342000/אלף_שירים_ושיר_חמישה_עשורים_של_שירי_מזרחית_ורוק_בישראל_איפיון_מוסיקלי
 For Abstract and contents in English: https://www.academia.edu/45342052/A_Thousand_Songs_and_a_Song_Five_Decades_of_Mizrahit_and_Rock_Songs_in_Israel_Musical_Analysis_English_Abstract_and_Contents_
+
 To cite this work, please refer to the dissertation: Adam Yodfat, "A Thousand Songs and a Song: Five Decades of Mizrahit and Rock Songs in Israel - Musical Analysis", PhD Dissertation (The Hebrew University of Jerusalem, 2020).
 
 We also intend to publish this work as a stand alone paper in English in the future.
